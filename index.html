@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обо мне — Лена Родюкова</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <header>
+    <h1>Лена Родюкова</h1>
+    <p>Студентка, интересующаяся технологиями, дизайном и развитием</p>
+  </header>
+
+  <main class="container">
+    <aside class="left">
+      <nav>
+        <h2>Меню</h2>
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#hobby">Интересы</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="center">
+      <h2 id="about">Обо мне</h2>
+      <img src="foto1.jpg" alt="Фото" class="profile">
+      <p>Меня зовут <strong>Лена Родюкова</strong>. 
+      Я студентка, увлекаюсь программированием, дизайном и современными технологиями. 
+      Люблю создавать проекты, которые сочетают функциональность и эстетику.</p>
+
+      <h2 id="hobby">Интересы</h2>
+      <ul class="hobbies">
+        <li>🎨 Дизайн и 3D-графика (Blender)</li>
+        <li>💻 Программирование (C#, HTML, CSS)</li>
+        <li>📚 Изучение новых технологий</li>
+        <li>🎧 Музыка и саморазвитие</li>
+      </ul>
+
+      <h2 id="projects">Проекты</h2>
+
+      <div class="accordion-item">
+        <h3 class="accordion-title">Проект 1: Игра "Камень-ножницы-бумага"</h3>
+        <div class="accordion-content" style="display:none;">
+          Игра "Камень-ножницы-бумага", написанная на C#. 
+          Пользователь выбирает один из вариантов, компьютер случайным образом выбирает свой, после чего отображается результат.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-title">Проект 2: Адаптивная веб-страница</h3>
+        <div class="accordion-content" style="display:none;">
+          Учебная веб-страница с адаптивным дизайном. Использованы HTML, CSS и JavaScript для интерактивности. 
+          Включает меню, галерею, аккордеон и кнопку "Наверх".
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h3 class="accordion-title">Проект 3: Фотогалерея с фильтрацией</h3>
+        <div class="accordion-content" style="display:none;">
+          Галерея с фильтром по категориям (Природа, Город). 
+          Картинки можно увеличивать через модальное окно. Всё реализовано на чистом JavaScript.
+        </div>
+      </div>
+
+      <div class="filters">
+        <button data-category="all">Все</button>
+        <button data-category="nature">Природа</button>
+        <button data-category="city">Город</button>
+      </div>
+
+      <div class="gallery">
+        <img src="img1.jpg" data-category="nature">
+        <img src="img2.jpg" data-category="city">
+        <img src="img3.jpg" data-category="nature">
+      </div>
+
+      <!-- Здесь автоматически будут добавлены блоки отзывов и галерея с API -->
+
+    </section>
+
+    <aside class="right">
+      <h2 id="contacts">Контакты</h2>
+      <p>📧 <a href="mailto:lena@example.com">lena@example.com</a></p>
+      <p>📱 Telegram: <a href="#">@lenarodyukova</a></p>
+
+      <h2>Мои цели</h2>
+      <ul class="ads">
+        <li>⚡ Развиваться в IT-сфере</li>
+        <li>💬 Изучать новые инструменты и языки</li>
+        <li>🌍 Создавать полезные и красивые проекты</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Лена Родюкова | Учебный проект</p>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-btn">↑</button>
+
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
